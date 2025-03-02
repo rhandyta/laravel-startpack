@@ -3,7 +3,7 @@
 @section("title-content", "Dashboard Page")
 
 @section("content")
-    
+
 @endsection
 
 @section("css")

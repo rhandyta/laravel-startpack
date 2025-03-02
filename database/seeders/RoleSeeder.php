@@ -16,8 +16,9 @@ class RoleSeeder extends Seeder
     {
          // Buat role "Super Admin"
          $role = Role::firstOrCreate(["name" => "Super Admin", "guard_name" => "web"]);
+         $role = Role::firstOrCreate(["name" => "Admin", "guard_name" => "web"]);
 
          // Ambil semua permission dan berikan ke Super Admin
-         $role->syncPermissions(Permission::all());
+        //  $role->syncPermissions(Permission::all());
     }
 }

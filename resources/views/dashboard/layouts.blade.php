@@ -25,7 +25,7 @@
       </div>
 
 
-
+  @yield("modal")
 
 {{-- Footer --}}
 

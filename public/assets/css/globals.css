@@ -1,0 +1,8 @@
+
+
+#order-selector, #limit-selector {
+    min-height: 31px!important;
+    max-height: 31px!important;
+    padding: 5px 10px!important;
+    font-size: inherit!important;
+}

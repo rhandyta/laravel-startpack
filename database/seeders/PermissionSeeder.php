@@ -18,8 +18,8 @@ class PermissionSeeder extends Seeder
             "role.create", "role.update", "role.delete", "role.view", "role.list"
         ];
 
-        foreach ($permissions as $perm) {
-            Permission::firstOrCreate(["name" => $perm, "guard_name" => "web"]);
-        }
+        // foreach ($permissions as $perm) {
+        //     Permission::firstOrCreate(["name" => $perm, "guard_name" => "web"]);
+        // }
     }
 }

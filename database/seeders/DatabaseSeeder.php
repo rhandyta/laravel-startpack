@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
         ]);
         $user = User::factory(1)->create();
-        $user = $user->where("email", "=", "superadmin@" . env("APP_HOST", request()->getHost()))->first();
+        $user = $user->first();
         $user->assignRole("Super Admin");
+        $user = User::factory(1)->create();
+        $user = $user->first();
+        $user->assignRole("Admin");
     }
 }

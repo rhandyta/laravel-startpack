@@ -20,12 +20,12 @@
   <script src="{{ asset('assets/js/stisla.js')}}"></script>
   
   <!-- JS Libraies -->
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Page Specific JS File -->
   
   <!-- Template JS File -->
   <script src="{{ asset('assets/js/scripts.js')}}"></script>
-  <script src="assets/js/globals.js"></script>
+  <script src="{{asset('assets/js/globals.js')}}"></script>
   
   @yield("javascript")
 </body>
